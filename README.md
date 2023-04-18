@@ -52,3 +52,7 @@ El proyecto lo dividiremos en dos partes:
 
 8. En la página "Success", podrás ver el ID de clave de acceso y la clave secreta de acceso. Descarga el archivo CSV o anota estos valores, ya que los necesitarás para configurar el acceso desde tu entorno de desarrollo.
 
+:pager:
+![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
+
+
