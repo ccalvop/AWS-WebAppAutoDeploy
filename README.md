@@ -2,13 +2,16 @@
 Implementación automática de una aplicación web utilizando servicios de AWS
 
 Proyecto colaborativo desarrollado por:
+
 Artem Pavlenko [Linkedin](https://www.linkedin.com/in/srpavlenko/)
+
 Carlos Brizuela [Linkedin](linkedin.com/in/carlos-b-aws-cloud)
+
 Carlos Calvo [Linkedin](https://www.linkedin.com/in/carlos-calvo-pareja/)
 
 👍 Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:
 
-## Creación de un usuario en AWS con permisos adecuados
+### Creación de un usuario en AWS con permisos adecuados
 
 1. Inicia sesión en la consola de AWS con tu cuenta de administrador.
 
