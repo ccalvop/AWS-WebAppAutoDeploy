@@ -13,6 +13,7 @@ Proyecto colaborativo desarrollado por:
 
 <br>
 ***
+
 El proyecto lo dividiremos en dos partes:
 
 **1**. Creación de un usuario AWS con los permisos adecuados
