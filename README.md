@@ -1,6 +1,8 @@
 # AWS-WebAppAutoDeploy
 Implementación automática de una aplicación web utilizando servicios de AWS
+
 <br>
+
 Proyecto colaborativo desarrollado por:
 
 **Artem Pavlenko** [Linkedin](https://www.linkedin.com/in/srpavlenko/)
@@ -10,6 +12,7 @@ Proyecto colaborativo desarrollado por:
 **Carlos Calvo** [Linkedin](https://www.linkedin.com/in/carlos-calvo-pareja/)
 <br>
 <br>
+
 👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:_
 ### Creación de un usuario en AWS con permisos adecuados
 
