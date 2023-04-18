@@ -13,7 +13,7 @@ Proyecto colaborativo desarrollado por:
 <br>
 <br>
 
-## Resumen
+### Resumen
 **A** Creación de un usuario AWS con los permisos adecuados
 
 **B** Desarrollo e implementación de la aplicación web en AWS
@@ -24,8 +24,9 @@ Proyecto colaborativo desarrollado por:
 - Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD.
 - Pruebas y documentación del proceso de CI/CD.
 
+
+### **A** Creación de un usuario en AWS con permisos adecuados
 👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:_
-### Creación de un usuario en AWS con permisos adecuados
 
 1. Inicia sesión en la consola de AWS con tu cuenta de administrador.
 
