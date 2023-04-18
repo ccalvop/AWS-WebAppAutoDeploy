@@ -39,7 +39,3 @@ Proyecto colaborativo desarrollado por:
 
 8. En la página "Success", podrás ver el ID de clave de acceso y la clave secreta de acceso. Descarga el archivo CSV o anota estos valores, ya que los necesitarás para configurar el acceso desde tu entorno de desarrollo.
 
-9. ¡Felicidades! Has creado un nuevo usuario con los permisos adecuados.
-
-**Importante**: No compartas tu ID de clave de acceso y la clave secreta de acceso en el README de tu repositorio de GitHub, ya que esto podría comprometer la seguridad de tu cuenta de AWS.
-
