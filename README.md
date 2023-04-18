@@ -15,6 +15,7 @@ Proyecto colaborativo desarrollado por:
 
 ## Resumen
 **A** Creación de un usuario AWS con los permisos adecuados
+
 **B** Desarrollo e implementación de la aplicación web en AWS
 - Creación de un repositorio de GitHub para alojar el código de la aplicación web.
 - Diseño y desarrollo de una aplicación web simple utilizando HTML, CSS y JavaScript.
