@@ -115,6 +115,16 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 <br>
    
 4. Configuración de **AWS CodePipeline** para crear un proceso de CI/CD
+   
+   1. Navega al servicio AWS CodePipeline. Haz clic en Create pipeline.
+   2. Ingresa un nombre para la pipeline (por ejemplo, WebAppAutoDeployPipeline) y selecciona la ubicación para almacenar los artefactos de la pipeline en S3 (puedes usar la opción predeterminada). Haz clic en Next.
+   3. En la sección Source, selecciona GitHub (Version 2) como el proveedor de origen. A continuación, haz clic en Connect to GitHub y sigue las instrucciones para autorizar a CodePipeline a acceder a tu repositorio de GitHub. Selecciona el repositorio y la rama que deseas usar (por ejemplo, ccalvop/AWS-WebAppAutoDeploy y la rama main). Haz clic en Next.
+   4. En la sección Build, selecciona AWS CodeBuild como el proveedor de compilación. Haz clic en Create build project. Ingresa un nombre para el proyecto de compilación (por ejemplo, WebAppAutoDeployBuildProject).
+   5. En la sección Environment, selecciona Managed image y elige Amazon Linux 2 como el sistema operativo. Elige Standard como el tipo de tiempo de ejecución y selecciona la última imagen disponible (por ejemplo, aws/codebuild/standard:5.0). Deja la configuración del entorno como Linux y x86_64.
+   6. En la sección Buildspec, selecciona Use a buildspec file. Esto le indicará a CodeBuild que busque un archivo buildspec.yml en la raíz de tu repositorio para obtener instrucciones de compilación.
+   7. Deja las configuraciones restantes como están y haz clic en Continue to CodePipeline.En la página de CodePipeline, haz clic en Next.
+   8. En la sección Deploy, selecciona Amazon S3 como el proveedor de implementación. Elige el bucket de S3 que creaste en el paso 3 y escribe index.html en el campo S3 object key. Marca la casilla Extract file before deploy para descomprimir los archivos antes de implementarlos. Haz clic en Next.
+   9. Revisa la configuración de la pipeline y haz clic en Create pipeline.
 
 5. Configuración de **AWS CodeBuild** para compilar y desplegar la aplicación web en el bucket de S3
 
