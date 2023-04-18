@@ -10,6 +10,7 @@ Proyecto colaborativo desarrollado por:
 **Carlos Brizuela** [Linkedin](linkedin.com/in/carlos-b-aws-cloud)
 
 **Carlos Calvo** [Linkedin](https://www.linkedin.com/in/carlos-calvo-pareja/)
+
 <br>
 
 **El proyecto lo dividiremos en dos partes:**
