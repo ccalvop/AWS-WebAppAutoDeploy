@@ -10,7 +10,8 @@ Proyecto colaborativo desarrollado por:
 **Carlos Calvo** [Linkedin](https://www.linkedin.com/in/carlos-calvo-pareja/)
 
 
-👍 Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:
+
+👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:_
 ### Creación de un usuario en AWS con permisos adecuados
 
 1. Inicia sesión en la consola de AWS con tu cuenta de administrador.
