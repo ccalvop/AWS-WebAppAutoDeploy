@@ -111,7 +111,7 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 - **AWS CodeBuild** es un servicio de compilación completamente administrado que compila y prueba automáticamente el código fuente cada vez que hay un cambio en el repositorio. En este proyecto, se encargará de compilar, validar y empaquetar la aplicación web antes de que sea implementada en Amazon S3. CodeBuild se integra con CodePipeline como una etapa dentro del proceso de CI/CD.
 ```
    Vamos a utilizar **AWS CodePipeline** para organizar y coordinar el flujo de trabajo de CI/CD, mientras que **AWS CodeBuild** se encargará de la compilación,        validación y empaquetamiento de la aplicación web como una etapa dentro de ese flujo de trabajo.
-<hr>
+<br>
    
 4. Configuración de **AWS CodePipeline** para crear un proceso de CI/CD
 
