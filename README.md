@@ -12,7 +12,6 @@ Proyecto colaborativo desarrollado por:
 **Carlos Calvo** [Linkedin](https://www.linkedin.com/in/carlos-calvo-pareja/)
 <br>
 <hr>
-
 El proyecto lo dividiremos en dos partes:
 
 **1**. Creación de un usuario AWS con los permisos adecuados
