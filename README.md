@@ -15,6 +15,7 @@ Proyecto colaborativo desarrollado por:
 <hr>
 El proyecto lo dividiremos en dos partes:
 
+
 **1**. Creación de un usuario AWS con los permisos adecuados
 
 **2**. Desarrollo e implementación de la aplicación web en AWS
