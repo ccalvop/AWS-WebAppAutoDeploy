@@ -35,7 +35,7 @@ El proyecto lo dividiremos en dos partes:
 
 3. En el panel de navegación izquierdo, selecciona **Users** y haz clic en **Add user**.
 
-4. Ingresa un nombre de usuario (por ejemplo, `WebAppAutoDeployUser`) y selecciona la casilla **Programmatic access** como tipo de acceso. Haz clic en **Next: Permissions**.
+4. Ingresa un nombre de usuario (por ejemplo, `WebAppAutoDeployUser`). En este punto, no selecciones ninguna de las opciones disponibles y simplemente haz clic en **Next: Permissions**.
 
 5. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
 
