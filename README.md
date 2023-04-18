@@ -13,7 +13,7 @@ Proyecto colaborativo desarrollado por:
 
 <br>
 
-***
+<hr>
 
 El proyecto lo dividiremos en dos partes:
 
