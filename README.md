@@ -111,7 +111,6 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 ```
    Vamos a utilizar **AWS CodePipeline** para organizar y coordinar el flujo de trabajo de CI/CD, mientras que **AWS CodeBuild** se encargará de la compilación,        validación y empaquetamiento de la aplicación web como una etapa dentro de ese flujo de trabajo.
    
-   
 4. Configuración de AWS CodePipeline para crear un proceso de CI/CD
 
 
