@@ -13,6 +13,16 @@ Proyecto colaborativo desarrollado por:
 <br>
 <br>
 
+## Resumen
+**A** Creación de un usuario AWS con los permisos adecuados
+**B** Desarrollo e implementación de la aplicación web en AWS
+- Creación de un repositorio de GitHub para alojar el código de la aplicación web.
+- Diseño y desarrollo de una aplicación web simple utilizando HTML, CSS y JavaScript.
+- Configuración de un bucket de S3 para alojar y servir la aplicación web.
+- Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
+- Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD.
+- Pruebas y documentación del proceso de CI/CD.
+
 👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:_
 ### Creación de un usuario en AWS con permisos adecuados
 
