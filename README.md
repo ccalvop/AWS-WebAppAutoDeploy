@@ -76,7 +76,7 @@ El proyecto lo dividiremos en dos partes:
 
 2. Diseño y desarrollo de una **aplicación web** simple utilizando HTML, CSS y JavaScript:
 
-   -Crea los siguientes archivos en la raíz de tu repositorio de GitHub: index.html, styles.css, script.js
+   -Crea los siguientes archivos en la raíz de tu repositorio de GitHub: `index.html` `styles.css` `script.js`
 
 3. Configuración de un **bucket de S3** para alojar y servir la aplicación web
 
