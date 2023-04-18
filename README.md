@@ -72,7 +72,7 @@ El proyecto lo dividiremos en dos partes:
 
 1. Creación de un **repositorio de GitHub** para alojar el código de la aplicación web.
 
-En nuestro caso [AWS-WebAppAutoDeploy](https://github.com/ccalvop/AWS-WebAppAutoDeploy)
+   En nuestro caso [AWS-WebAppAutoDeploy](https://github.com/ccalvop/AWS-WebAppAutoDeploy)
 
 2. Diseño y desarrollo de una **aplicación web** simple utilizando HTML, CSS y JavaScript:
 
