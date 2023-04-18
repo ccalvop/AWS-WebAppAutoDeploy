@@ -13,7 +13,7 @@ Proyecto colaborativo desarrollado por:
 
 <br>
 
-**El proyecto lo dividiremos en dos partes:**
+El proyecto lo dividiremos en dos partes:
 
 **1**. Creación de un usuario AWS con los permisos adecuados
 
@@ -24,7 +24,7 @@ Proyecto colaborativo desarrollado por:
 - Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
 - Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD.
 - Pruebas y documentación del proceso de CI/CD.
-
+***
 
 # 1. Creación de un usuario en AWS con permisos adecuados
 👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:_
