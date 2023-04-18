@@ -54,6 +54,7 @@ El proyecto lo dividiremos en dos partes:
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
 8. Para acceder a la consola de AWS con el nuevo usuario, necesitarás crear una contraseña y proporcionar acceso a la consola:
+ 
    - Busca y selecciona el usuario que acabas de crear (WebAppAutoDeployUser).
    - En la página de resumen del usuario, ve a la pestaña Security credentials.
    - En la sección Console sign-in, haz clic en **Enable console access**
