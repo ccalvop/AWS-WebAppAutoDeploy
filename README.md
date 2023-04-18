@@ -76,7 +76,21 @@ El proyecto lo dividiremos en dos partes:
 
 2. Diseño y desarrollo de una **aplicación web** simple utilizando HTML, CSS y JavaScript:
 
-   -Crea los siguientes archivos en la raíz de tu repositorio de GitHub: `index.html` `styles.css` `script.js`
+   Crea los siguientes archivos en la raíz de tu repositorio de GitHub: `index.html` `styles.css` `script.js`
 
-3. Configuración de un **bucket de S3** para alojar y servir la aplicación web
+3. Configuración de un **bucket de S3** para alojar y servir la aplicación web:
+   
+   1. Navega al servicio Amazon S3.
+   2. Haz clic en Create bucket.
+   3. Ingresa un nombre único para el bucket (por ejemplo, mi-webapp-autodeploy) y selecciona la región en la que deseas crear el bucket. 
+   4. Permite el acceso público al bucket desmarcando "Block all public access".
+   5. Haz clic en Create.
+   6. Ve a la sección Bucket policy y haz clic en Edit.
+   7. Agrega la siguiente política al editor de políticas:
+      ![buckets3-3 policy](https://user-images.githubusercontent.com/126183973/232858066-a18ba578-e2d7-4b69-9527-5cc547eb062e.png)
+
+
+
+
+
 
