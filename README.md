@@ -65,7 +65,10 @@ El proyecto lo dividiremos en dos partes:
 ![guia-crear-usuario2](https://user-images.githubusercontent.com/126183973/232850735-31654c1f-e19b-4990-8f67-c69f003898e3.JPG)
 
 ![guia-crear-usuario3](https://user-images.githubusercontent.com/126183973/232850780-effc2ec2-cbe1-4f3d-9d1f-ee34fe00486d.JPG)
+<br>
+<hr>
 
+## 2. Desarrollo e implementación de la aplicación web en AWS
 
 
 
