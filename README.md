@@ -24,6 +24,15 @@ El proyecto lo dividiremos en dos partes:
 - Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
 - Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD.
 - Pruebas y documentación del proceso de CI/CD.
+
+```
+CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Integration, CI) y la Entrega Continua (Continuous Delivery, CD).
+
+-Integración Continua (CI): Es la práctica de combinar automáticamente el código de los desarrolladores en un repositorio centralizado. El objetivo de la CI es detectar y solucionar rápidamente los problemas de integración y garantizar que el código esté siempre en un estado desplegable.
+
+-Entrega Continua (CD): Es el proceso de desplegar automáticamente las aplicaciones en producción después de pasar por las etapas de CI.
+```
+
 ***
 
 ## 1. Creación de un usuario en AWS con permisos adecuados
@@ -88,8 +97,10 @@ El proyecto lo dividiremos en dos partes:
    6. Ve a la sección Bucket policy y haz clic en Edit.
    7. Agrega la siguiente política al editor de políticas:
       ![buckets3-3 policy](https://user-images.githubusercontent.com/126183973/232858066-a18ba578-e2d7-4b69-9527-5cc547eb062e.png)
+   8. Configura el bucket como página web estática. En propiedades: **Alojamiento de sitios web estáticos** `Editar`
+   9. En **Index document o Documento de índice** especificamos el nombre de la página: `index.html`
 
-
+4. Configuración de **AWS CodePipeline** para crear un proceso de **CI/CD**
 
 
 
