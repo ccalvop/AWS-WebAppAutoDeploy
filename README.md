@@ -27,7 +27,7 @@ El proyecto lo dividiremos en dos partes:
 ***
 
 ## 1. Creación de un usuario en AWS con permisos adecuados
-👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario en AWS con los permisos adecuados:_
+👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario con los permisos adecuados:_
 
 1. Inicia sesión en la consola de AWS con tu cuenta de administrador.
 
@@ -54,5 +54,7 @@ El proyecto lo dividiremos en dos partes:
 
 :pager:
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
+
+
 
 
