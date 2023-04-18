@@ -40,7 +40,7 @@ El proyecto lo dividiremos en dos partes:
 5. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
 
    - `AmazonS3FullAccess`
-   - `AWSCodePipelineFullAccess`
+   - `AWSCodePipeline_FullAccess`
    - `AWSCodeBuildAdminAccess`
    - `AWSCloudFormationFullAccess`
    
