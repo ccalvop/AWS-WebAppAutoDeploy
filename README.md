@@ -37,7 +37,8 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 
 ## 1. Creación de un usuario en AWS con permisos adecuados
 👍 _Antes de comenzar con el proyecto crearemos un nuevo usuario con los permisos adecuados:_
- :oncoming_automobile: _Automatización_
+
+:oncoming_automobile: _Posibilidad de automatizar este paso_ 
 
 1. Inicia sesión en la consola de AWS con tu cuenta de administrador.
 
