@@ -82,6 +82,7 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 **AWS CloudFormation** archivo `iam_user.yml`
 
 > usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
+
 ```aws cloudformation create-stack --stack-name WebAppAutoDeployUserStack --template-body file://iam_user.yml```
 
 **Terraform** archivo `main.ft`
