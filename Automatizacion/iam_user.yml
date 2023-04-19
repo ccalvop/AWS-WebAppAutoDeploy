@@ -1,0 +1,27 @@
+Resources:
+  WebAppAutoDeployUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: WebAppAutoDeployUser
+
+  WebAppAutoDeployPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: WebAppAutoDeployPolicy
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action:
+              - 's3:*'
+            Resource: '*'
+          - Effect: Allow
+            Action:
+              - 'codebuild:*'
+            Resource: '*'
+          - Effect: Allow
+            Action:
+              - 'codepipeline:*'
+            Resource: '*'
+      Users:
+        - Ref: WebAppAutoDeployUser
