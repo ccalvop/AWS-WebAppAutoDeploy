@@ -1,4 +1,3 @@
-AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   WebAppAutoDeployUser:
     Type: AWS::IAM::User
@@ -13,16 +12,26 @@ Resources:
         Version: '2012-10-17'
         Statement:
           - Effect: Allow
-            Action:
-              - 's3:*'
+            Action: 's3:*'
+            Resource: '*'
+          - Effect: Allow
+            Action: 'codebuild:*'
+            Resource: '*'
+          - Effect: Allow
+            Action: 'codepipeline:*'
+            Resource: '*'
+          - Effect: Allow
+            Action: 'codestar-connections:*'
             Resource: '*'
           - Effect: Allow
             Action:
-              - 'codebuild:*'
-            Resource: '*'
+              - 'iam:CreateRole'
+              - 'iam:AttachRolePolicy'
+              - 'iam:PutRolePolicy'
+              - 'iam:PassRole'
+            Resource: 'arn:aws:iam::*:role/service-role/*'
           - Effect: Allow
-            Action:
-              - 'codepipeline:*'
-            Resource: '*'
+            Action: 'iam:CreatePolicy'
+            Resource: 'arn:aws:iam::*:policy/*'
       Users:
-        - Ref: WebAppAutoDeployUser
+        - !Ref WebAppAutoDeployUser
