@@ -75,6 +75,7 @@ Tenemos varias posibilidades para crear el usuario:
 6. Haz clic en **Next: Tags**. Puedes agregar etiquetas si lo deseas, pero no son necesarias para este proyecto. Haz clic en **Next: Review**.
 
 7. Revisa la configuración del usuario y haz clic en **Create user**.
+
 :pager:
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
@@ -105,10 +106,8 @@ Tenemos varias posibilidades para crear el usuario:
 
 :pager:
 ![guia-crear-usuario2](https://user-images.githubusercontent.com/126183973/232850735-31654c1f-e19b-4990-8f67-c69f003898e3.JPG)
-
 ![guia-crear-usuario3](https://user-images.githubusercontent.com/126183973/232850780-effc2ec2-cbe1-4f3d-9d1f-ee34fe00486d.JPG)
 <br>
-
 <hr>
 
 ## 2. Desarrollo e implementación de la aplicación web en AWS
