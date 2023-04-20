@@ -3,9 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-      - CHANGED_FILES=$(git diff --name-only HEAD HEAD~1)
-      - echo "Changed files: $CHANGED_FILES"
-      - if ! echo "$CHANGED_FILES" | grep -E '\.(html|css|js)$' > /dev/null; then exit 0; fi
+      - |
+        CHANGED_FILES=$(git diff --name-only HEAD HEAD~1)
+        echo "Changed files: $CHANGED_FILES"
+        if ! echo "$CHANGED_FILES" | grep -E '\.(html|css|js)$' > /dev/null; then exit 0; fi
   build:
     commands:
       - echo "No build required for a simple HTML, CSS, and JavaScript application."
