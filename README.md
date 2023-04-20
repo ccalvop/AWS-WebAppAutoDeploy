@@ -56,9 +56,9 @@ Tenemos varias posibilidades para crear el usuario:
 
 3. En el panel de navegación izquierdo, selecciona **Users** y haz clic en **Add user**.
 
-**A. Añadiendo los permisos uno a uno**
-
 4. Ingresa un nombre de usuario (por ejemplo, `WebAppAutoDeployUser`). En este punto, no selecciones ninguna de las opciones disponibles y simplemente haz clic en **Next: Permissions**.
+
+**A. Añadiendo los permisos uno a uno**
 
 5. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
 
@@ -79,20 +79,6 @@ Tenemos varias posibilidades para crear el usuario:
 :pager:
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
-8. Necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
- 
-   - Busca y selecciona el usuario que acabas de crear (WebAppAutoDeployUser).
-   - En la página de resumen del usuario, ve a la pestaña Security credentials.
-   - En la sección Console sign-in, haz clic en **Enable console access**
-   - Crea una contraeña o generala automaticamente y requiere opcionalmente que el usuario cambie su contraseña en el primer inicio de sesión.
-
-
-:pager:
-![guia-crear-usuario2](https://user-images.githubusercontent.com/126183973/232850735-31654c1f-e19b-4990-8f67-c69f003898e3.JPG)
-
-![guia-crear-usuario3](https://user-images.githubusercontent.com/126183973/232850780-effc2ec2-cbe1-4f3d-9d1f-ee34fe00486d.JPG)
-<br>
-
 **B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
 
 [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Politicas)
@@ -110,6 +96,20 @@ Tenemos varias posibilidades para crear el usuario:
 **Terraform** archivo `main.ft`
 
 > iniciarlizar terraform ```terraform init``` y aplicamos el archivo de configuracion ```terrafom apply```
+
+8. Necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
+ 
+   - Busca y selecciona el usuario que acabas de crear (WebAppAutoDeployUser).
+   - En la página de resumen del usuario, ve a la pestaña Security credentials.
+   - En la sección Console sign-in, haz clic en **Enable console access**
+   - Crea una contraeña o generala automaticamente y requiere opcionalmente que el usuario cambie su contraseña en el primer inicio de sesión.
+
+
+:pager:
+![guia-crear-usuario2](https://user-images.githubusercontent.com/126183973/232850735-31654c1f-e19b-4990-8f67-c69f003898e3.JPG)
+
+![guia-crear-usuario3](https://user-images.githubusercontent.com/126183973/232850780-effc2ec2-cbe1-4f3d-9d1f-ee34fe00486d.JPG)
+<br>
 
 <hr>
 
