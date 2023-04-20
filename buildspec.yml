@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "No build required for a simple HTML, CSS, and JavaScript application."
+
+  post_build:
+    commands:
+      - aws s3 sync . s3://webapp-auto-deploy-bucket --exclude ".git/*" --exclude "buildspec.yml" --delete
