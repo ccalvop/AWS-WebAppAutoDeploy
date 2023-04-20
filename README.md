@@ -58,7 +58,7 @@ Tenemos varias posibilidades para crear el usuario:
 
 4. Ingresa un nombre de usuario (por ejemplo, `WebAppAutoDeployUser`). En este punto, no selecciones ninguna de las opciones disponibles y simplemente haz clic en **Next: Permissions**.
 
-**A. Añadiendo los permisos uno a uno**
+   **A. Añadiendo los permisos uno a uno**
 
 5. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
 
@@ -79,11 +79,11 @@ Tenemos varias posibilidades para crear el usuario:
 :pager:
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
-**B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
+   **B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
 
 [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Politicas)
 
-**C. Automatizando con cloudformation o terraform**
+   **C. Automatizando con cloudformation o terraform**
 
 [archivos automatización](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Automatizacion)
 
