@@ -128,6 +128,22 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 ```
    Vamos a utilizar **AWS CodePipeline** para organizar y coordinar el flujo de trabajo de CI/CD, mientras que **AWS CodeBuild** se encargará de la compilación,        validación y empaquetamiento de la aplicación web como una etapa dentro de ese flujo de trabajo.
 
+**Nota**: CodeBuild (compilacion)
+
+Para una aplicación web simple compuesta de archivos HTML, CSS y JavaScript, no es necesario compilar en el sentido tradicional. Sin embargo, en este contexto, el término "compilar" se refiere al proceso de preparar y empaquetar los archivos de la aplicación web antes de implementarlos en el bucket de S3.
+
+Al utilizar AWS CodeBuild en este caso, estás aprovechando algunas ventajas:
+
+1. Automatización: CodeBuild se integra fácilmente con CodePipeline, lo que te permite automatizar el proceso de preparación y despliegue de tu aplicación web en respuesta a los cambios en el repositorio de GitHub.
+
+2. Consistencia: Aunque la aplicación web es simple en este caso, es posible que en el futuro desees agregar más funcionalidades, como la utilización de un marco de trabajo o bibliotecas de terceros que requieran una etapa de construcción. Al utilizar CodeBuild desde el principio, estableces un flujo de trabajo coherente que se puede ampliar fácilmente en el futuro.
+
+3. Optimización: Aunque no es necesario en una aplicación web simple, CodeBuild también te permite realizar tareas de optimización, como la minificación de archivos CSS y JavaScript, comprimir imágenes, etc. Esto puede mejorar el rendimiento y la eficiencia de tu aplicación web.
+
+4. Pruebas: Si tu aplicación crece y decides incluir pruebas unitarias o de integración, CodeBuild te permitirá ejecutar estas pruebas automáticamente como parte del proceso de CI/CD.
+
+En resumen, aunque la compilación en sí misma no es necesaria para una aplicación web simple, el uso de AWS CodeBuild en este caso te proporciona un proceso automatizado y coherente que se puede adaptar fácilmente a medida que tu aplicación web evoluciona
+
 <br>
    
 4. Configuración de **AWS CodePipeline** para crear un proceso de CI/CD
