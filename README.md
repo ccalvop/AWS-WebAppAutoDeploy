@@ -114,7 +114,7 @@ Tenemos varias posibilidades para crear el usuario:
 
 _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
 
-1. Creación de un **repositorio de GitHub** para alojar el código de la aplicación web.
+<ins>1. Creación de un **repositorio de GitHub** para alojar el código de la aplicación web.<ins>
 
    En nuestro caso [AWS-WebAppAutoDeploy](https://github.com/ccalvop/AWS-WebAppAutoDeploy)
 
