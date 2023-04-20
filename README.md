@@ -42,19 +42,21 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 
 Tenemos varias posibilidades para crear el usuario: 
 
-- Añadiendo los permisos uno a uno
+- A. Añadiendo los permisos uno a uno
 
-- Creando una politica de permisos 
+- B. Creando una politica de permisos 
 
-- Automatizando con cloudformation o terraform
+- C. Automatizando con cloudformation o terraform
 
-**Creando el usuario desde la cuenta Administrador y añadiendo los permisos uno a uno:**
+**Crear el usuario desde la cuenta Administrador**
 
 1. Inicia sesión en la consola de AWS con tu cuenta de administrador.
 
 2. Navega al servicio **IAM (Identity and Access Management)**.
 
 3. En el panel de navegación izquierdo, selecciona **Users** y haz clic en **Add user**.
+
+**A. Añadiendo los permisos uno a uno**
 
 4. Ingresa un nombre de usuario (por ejemplo, `WebAppAutoDeployUser`). En este punto, no selecciones ninguna de las opciones disponibles y simplemente haz clic en **Next: Permissions**.
 
@@ -91,11 +93,11 @@ Tenemos varias posibilidades para crear el usuario:
 ![guia-crear-usuario3](https://user-images.githubusercontent.com/126183973/232850780-effc2ec2-cbe1-4f3d-9d1f-ee34fe00486d.JPG)
 <br>
 
-**Creando una politica de permisos y agregandola al usuario**
+**B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
 
 [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Politicas)
 
-**Automatización**
+**C. Automatizando con cloudformation o terraform**
 
 [archivos automatización](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Automatizacion)
 
