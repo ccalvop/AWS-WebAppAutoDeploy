@@ -118,11 +118,11 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
 
    En nuestro caso [AWS-WebAppAutoDeploy](https://github.com/ccalvop/AWS-WebAppAutoDeploy)
 
-2. Diseño y desarrollo de una **aplicación web** simple utilizando HTML, CSS y JavaScript:
+<ins>2. Diseño y desarrollo de una **aplicación web** simple utilizando HTML, CSS y JavaScript:<ins>
 
    Crea los siguientes archivos en la raíz de tu repositorio de GitHub: `index.html` `styles.css` `script.js`
 
-3. Configuración de un **bucket de S3** para alojar y servir la aplicación web:
+<ins>3. Configuración de un **bucket de S3** para alojar y servir la aplicación web:<ins>
    
    1. Navega al servicio Amazon S3.
    2. Haz clic en Create bucket.
@@ -145,12 +145,13 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
 
 - **AWS CodeBuild** es un servicio de compilación completamente administrado que compila y prueba automáticamente el código fuente cada vez que hay un cambio en el repositorio. En este proyecto, se encargará de compilar, validar y empaquetar la aplicación web antes de que sea implementada en Amazon S3. CodeBuild se integra con CodePipeline como una etapa dentro del proceso de CI/CD.
 ```
-   Vamos a utilizar **AWS CodePipeline** para organizar y coordinar el flujo de trabajo de CI/CD, mientras que **AWS CodeBuild** se encargará de la compilación,        validación y empaquetamiento de la aplicación web como una etapa dentro de ese flujo de trabajo.
+Vamos a utilizar **AWS CodePipeline** para organizar y coordinar el flujo de trabajo de CI/CD, mientras que **AWS CodeBuild** se encargará de la compilación,        validación y empaquetamiento de la aplicación web como una etapa dentro de ese flujo de trabajo.
 
-**Nota**: CodeBuild (compilacion)
+**CodeBuild** (compilación):
 
 Para una aplicación web simple compuesta de archivos HTML, CSS y JavaScript, no es necesario compilar en el sentido tradicional. Sin embargo, en este contexto, el término "compilar" se refiere al proceso de preparar y empaquetar los archivos de la aplicación web antes de implementarlos en el bucket de S3.
 
+```
 Al utilizar AWS CodeBuild en este caso, estás aprovechando algunas ventajas:
 
 1. Automatización: CodeBuild se integra fácilmente con CodePipeline, lo que te permite automatizar el proceso de preparación y despliegue de tu aplicación web en respuesta a los cambios en el repositorio de GitHub.
@@ -162,10 +163,11 @@ Al utilizar AWS CodeBuild en este caso, estás aprovechando algunas ventajas:
 4. Pruebas: Si tu aplicación crece y decides incluir pruebas unitarias o de integración, CodeBuild te permitirá ejecutar estas pruebas automáticamente como parte del proceso de CI/CD.
 
 En resumen, aunque la compilación en sí misma no es necesaria para una aplicación web simple, el uso de AWS CodeBuild en este caso te proporciona un proceso automatizado y coherente que se puede adaptar fácilmente a medida que tu aplicación web evoluciona
+```
 
 <br>
    
-4. Configuración de **AWS CodePipeline** para crear un proceso de CI/CD
+<ins>::four::. Configuración de **AWS CodePipeline** para crear un proceso de CI/CD<ins>
    
    1. Navega al servicio AWS CodePipeline. Haz clic en Create pipeline.
    2. Ingresa un nombre para la pipeline (por ejemplo, WebAppAutoDeployPipeline) y selecciona la ubicación para almacenar los artefactos de la pipeline en S3 (puedes usar la opción predeterminada). Haz clic en Next.
