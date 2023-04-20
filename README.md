@@ -75,27 +75,26 @@ Tenemos varias posibilidades para crear el usuario:
 6. Haz clic en **Next: Tags**. Puedes agregar etiquetas si lo deseas, pero no son necesarias para este proyecto. Haz clic en **Next: Review**.
 
 7. Revisa la configuración del usuario y haz clic en **Create user**.
-
 :pager:
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
-    **B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
+   **B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
 
       [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Politicas)
 
-    **C. Automatizando con cloudformation o terraform**
+   **C. Automatizando con cloudformation o terraform**
 
     [archivos automatización](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Automatizacion)
 
-    **AWS CloudFormation** archivo `iam_user.yml`
+   **AWS CloudFormation** archivo `iam_user.yml`
 
-      > usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
+     > usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
 
-      ```aws cloudformation create-stack --stack-name WebAppAutoDeployUserStack --template-body file://iam_user.yml```
+     ```aws cloudformation create-stack --stack-name WebAppAutoDeployUserStack --template-body file://iam_user.yml```
 
-      **Terraform** archivo `main.ft`
+     **Terraform** archivo `main.ft`
 
-      > iniciarlizar terraform ```terraform init``` y aplicamos el archivo de configuracion ```terrafom apply```
+     > iniciarlizar terraform ```terraform init``` y aplicamos el archivo de configuracion ```terrafom apply```
 
 8. Necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
  
