@@ -114,15 +114,15 @@ Tenemos varias posibilidades para crear el usuario:
 
 _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
 
-<ins>1. Creación de un **repositorio de GitHub** para alojar el código de la aplicación web.<ins>
+<ins>:one: Creación de un **repositorio de GitHub** para alojar el código de la aplicación web.<ins>
 
    En nuestro caso [AWS-WebAppAutoDeploy](https://github.com/ccalvop/AWS-WebAppAutoDeploy)
 
-<ins>2. Diseño y desarrollo de una **aplicación web** simple utilizando HTML, CSS y JavaScript:<ins>
+<ins>:two: Diseño y desarrollo de una **aplicación web** simple utilizando HTML, CSS y JavaScript:<ins>
 
    Crea los siguientes archivos en la raíz de tu repositorio de GitHub: `index.html` `styles.css` `script.js`
 
-<ins>3. Configuración de un **bucket de S3** para alojar y servir la aplicación web:<ins>
+<ins>:three: Configuración de un **bucket de S3** para alojar y servir la aplicación web:<ins>
    
    1. Navega al servicio Amazon S3.
    2. Haz clic en Create bucket.
@@ -137,7 +137,6 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
       ![buckets3-5](https://user-images.githubusercontent.com/126183973/232861967-72c4fc28-0959-43c7-bb81-32c30a462e88.JPG)
 <br>
 <hr>
-
 **AWS CodePipeline** y **AWS CodeBuild** en este proyecto
 
 ```
@@ -164,10 +163,10 @@ Al utilizar AWS CodeBuild en este caso, estás aprovechando algunas ventajas:
 
 En resumen, aunque la compilación en sí misma no es necesaria para una aplicación web simple, el uso de AWS CodeBuild en este caso te proporciona un proceso automatizado y coherente que se puede adaptar fácilmente a medida que tu aplicación web evoluciona
 ```
-
+<hr>
 <br>
    
-<ins>::four::. Configuración de **AWS CodePipeline** para crear un proceso de CI/CD<ins>
+<ins>:four: Configuración de **AWS CodePipeline** para crear un proceso de CI/CD<ins>
    
    1. Navega al servicio AWS CodePipeline. Haz clic en Create pipeline.
    2. Ingresa un nombre para la pipeline (por ejemplo, WebAppAutoDeployPipeline) y selecciona la ubicación para almacenar los artefactos de la pipeline en S3 (puedes usar la opción predeterminada). Haz clic en Next.
@@ -196,6 +195,6 @@ En resumen, aunque la compilación en sí misma no es necesaria para una aplicac
    8. En la sección Deploy, selecciona Amazon S3 como el proveedor de implementación. Elige el bucket de S3 que creaste en el paso 3 y escribe index.html en el campo S3 object key. Marca la casilla Extract file before deploy para descomprimir los archivos antes de implementarlos. Haz clic en Next.
    9. Revisa la configuración de la pipeline y haz clic en Create pipeline.
 
-5. Configuración de **AWS CodeBuild** para compilar y desplegar la aplicación web en el bucket de S3
+<ins>:five: Configuración de **AWS CodeBuild** para compilar y desplegar la aplicación web en el bucket de S3<ins>
 
 
