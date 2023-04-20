@@ -137,6 +137,7 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
       ![buckets3-5](https://user-images.githubusercontent.com/126183973/232861967-72c4fc28-0959-43c7-bb81-32c30a462e88.JPG)
 <br>
 <hr>
+
 **AWS CodePipeline** y **AWS CodeBuild** en este proyecto
 
 ```
@@ -146,9 +147,7 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
 ```
 Vamos a utilizar **AWS CodePipeline** para organizar y coordinar el flujo de trabajo de CI/CD, mientras que **AWS CodeBuild** se encargará de la compilación,        validación y empaquetamiento de la aplicación web como una etapa dentro de ese flujo de trabajo.
 
-**CodeBuild** (compilación):
-
-Para una aplicación web simple compuesta de archivos HTML, CSS y JavaScript, no es necesario compilar en el sentido tradicional. Sin embargo, en este contexto, el término "compilar" se refiere al proceso de preparar y empaquetar los archivos de la aplicación web antes de implementarlos en el bucket de S3.
+**AWS CodeBuild** Para una aplicación web simple compuesta de archivos HTML, CSS y JavaScript, no es necesario compilar en el sentido tradicional. Sin embargo, en este contexto, el término "compilar" se refiere al proceso de preparar y empaquetar los archivos de la aplicación web antes de implementarlos en el bucket de S3.
 
 ```
 Al utilizar AWS CodeBuild en este caso, estás aprovechando algunas ventajas:
