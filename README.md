@@ -96,6 +96,7 @@ Tenemos varias posibilidades para crear el usuario:
   **Terraform** archivo `main.ft`
 
   > iniciarlizar terraform ```terraform init``` y aplicamos el archivo de configuracion ```terrafom apply```
+<br>
 
 8. Necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
  
