@@ -7,4 +7,4 @@ phases:
 
   post_build:
     commands:
-      - aws s3 sync . s3://webapp-auto-deploy-bucket --exclude ".git/*" --exclude "buildspec.yml" --exclude "readme.md" --exclude "Automatizacion/*" --exclude "Politicas/*" --delete
+      - aws s3 sync . s3://01-webapp-autodeploy --exclude ".git/*" --exclude "buildspec.yml" --exclude "README.md" --exclude "Automatizacion/*" --exclude "Politicas/*" --delete
