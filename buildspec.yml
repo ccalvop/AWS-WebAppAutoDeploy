@@ -12,11 +12,6 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: "/"
   discard-paths: yes
-  exclude:
-    - ".git/*"
-    - "buildspec.yml"
-    - "README.md"
-    - "Automatizacion/*"
-    - "Politicas/*"
+  base-directory: "."
+  
