@@ -10,7 +10,6 @@ Proyecto colaborativo desarrollado por:
 **Artem Pavlenko** [Linkedin](https://www.linkedin.com/in/srpavlenko/)
 
 **Carlos Brizuela** [Linkedin](linkedin.com/in/carlos-b-aws-cloud)
-
 <br>
 <hr>
 
