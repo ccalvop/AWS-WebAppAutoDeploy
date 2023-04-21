@@ -185,13 +185,13 @@ En resumen, aunque la compilación en sí misma no es necesaria para una aplicac
 <ins>:four: Configuración de **AWS CodePipeline** para crear un proceso de CI/CD<ins>
    
    1. Navega al servicio AWS CodePipeline. Haz clic en Create pipeline.
-   2. Ingresa un nombre para la pipeline (por ejemplo, WebAppAutoDeployPipeline) y selecciona la ubicación para almacenar los artefactos de la pipeline en S3 (puedes usar la opción predeterminada). Haz clic en Next.
-   3. En la sección Source, selecciona GitHub (Version 2) como el proveedor de origen. A continuación, haz clic en Connect to GitHub y sigue las instrucciones para autorizar a CodePipeline a acceder a tu repositorio de GitHub. Selecciona el repositorio y la rama que deseas usar (por ejemplo, ccalvop/AWS-WebAppAutoDeploy y la rama main). Haz clic en Next.
-   4. En la sección Build, selecciona AWS CodeBuild como el proveedor de compilación. Haz clic en Create build project. Ingresa un nombre para el proyecto de compilación (por ejemplo, WebAppAutoDeployBuildProject).
-   5. En la sección Environment, selecciona Managed image y elige Amazon Linux 2 como el sistema operativo. Elige Standard como el tipo de tiempo de ejecución y selecciona la última imagen disponible (por ejemplo, aws/codebuild/standard:5.0). Deja la configuración del entorno como Linux y x86_64.
-   6. En la sección Buildspec, selecciona Use a buildspec file. Esto le indicará a CodeBuild que busque un archivo buildspec.yml en la raíz de tu repositorio para obtener instrucciones de compilación.
+   2. Ingresa un nombre para la pipeline (por ejemplo, WebAppAutoDeployPipeline) y selecciona la ubicación para almacenar los artefactos de la pipeline en S3 (Default). Haz clic en Next.
+   3. En la sección "Source", selecciona "GitHub (Version 2)" como el proveedor de repositorio y haz clic en "Connect to GitHub". Autoriza a AWS CodePipeline para acceder a tu cuenta de GitHub, si es necesario. Selecciona el repositorio y la rama que deseas usar (por ejemplo, "master" o "main"). Asegúrate de marcar la opción "Start the pipeline on source code change" para que el pipeline se ejecute automáticamente cuando haya cambios en el repositorio. Haz clic en "Next".
+   4. En la sección Build, selecciona AWS CodeBuild como el proveedor de compilación. Haz clic en Create build project. Se abrirá una nueva ventana CodeBuild. Ingresa un nombre para el proyecto de compilación (por ejemplo, WebAppAutoDeployBuildProject).
+   5. En la sección Environment de CodeBuild, selecciona Managed image y elige Amazon Linux 2 como el sistema operativo. Elige Standard como el tipo de tiempo de ejecución y selecciona la última imagen disponible (por ejemplo, aws/codebuild/standard:5.0). Deja la configuración del entorno como Linux y x86_64.
+   6. Aun en CodeBuild, mas abajo, en la sección Buildspec, selecciona Use a buildspec file. Esto le indicará a CodeBuild que busque un archivo buildspec.yml en la raíz de tu repositorio para obtener instrucciones de compilación.
    
-   El archivo buildspec.yml es un archivo de configuración que AWS CodeBuild utiliza para definir las acciones que debe realizar durante la etapa de compilación. En    nuestro caso, dado que la aplicación web es simple, el archivo buildspec.yml será bastante básico:
+   El archivo buildspec.yml es un archivo de configuración que AWS CodeBuild utiliza para definir las acciones que debe realizar durante la etapa de compilación. En nuestro caso, dado que la aplicación web es simple, el archivo buildspec.yml será bastante básico:
    
    ```
    version: 0.2
