@@ -116,14 +116,14 @@ A3. Revisa la configuración del usuario y haz clic en **Create user**.
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
    **B. Creando una politica de permisos y agregandola al usuario creado** (Recomendado)
-
-      [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
+   
+   archivo [politica.json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
 
    **C. Automatizando el proceso con Cloudformation**
 
    **AWS CloudFormation** 
    
-   archivo (iam_user.yml)[https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml]
+   archivo [iam_user.yml][https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml]
 
      > usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
 
