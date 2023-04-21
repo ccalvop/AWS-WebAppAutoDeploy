@@ -119,9 +119,7 @@ A3. Revisa la configuración del usuario y haz clic en **Create user**.
    
    archivo [politica.json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
 
-   **C. Automatizando el proceso con Cloudformation**
-
-   **AWS CloudFormation** 
+   **C. Automatizando el proceso con AWS CloudFormation**
    
    archivo [iam_user.yml](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml)
 
