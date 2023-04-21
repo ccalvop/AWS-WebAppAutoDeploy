@@ -23,6 +23,11 @@
         },
         {
             "Effect": "Allow",
+            "Action": "codecommit:ListRepositories",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
                 "iam:AttachRolePolicy",
@@ -30,6 +35,13 @@
                 "iam:PassRole"
             ],
             "Resource": "arn:aws:iam::*:role/service-role/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetRole"
+            ],
+            "Resource": "*"
         },
         {
             "Effect": "Allow",
