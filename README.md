@@ -123,7 +123,7 @@ A3. Revisa la configuración del usuario y haz clic en **Create user**.
 
    **AWS CloudFormation** 
    
-   archivo [iam_user.yml][https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml]
+   archivo [iam_user.yml](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml)
 
      > usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
 
