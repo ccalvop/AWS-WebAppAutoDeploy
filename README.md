@@ -42,19 +42,33 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 **Arbol de archivos del repositorio**
 
 AWS-WebAppAutoDeploy/
+
 │
+
 ├── Automatizacion/
+
 │   ├── iam_user.yml
+
 │   └── main.tf
+
 │
+
 ├── Politicas/
+
 │   ├── WebAppAutoDeployPolicy.json
+
 │   └── codebuild-WebAppAutoDeployBuildProject-service-role
+
 │
+
 ├── buildspec.yml
+
 ├── index.html
+
 ├── script.js
+
 ├── styles.css
+
 └── README.md
 
 ***
@@ -252,4 +266,10 @@ Pipeline se ejecuta. La primera vez se despliegan los archivos del respositorio 
 ![final_1](https://user-images.githubusercontent.com/126183973/233655309-b48175fa-e7f0-4d3d-a420-a2553b2ead43.JPG)
 
 Podemos probar a modificar el codigo en el archivo index.html del repositorio y veremos como de forma casi instantánea, la web se actualiza:
+
+![index_modificacion](https://user-images.githubusercontent.com/126183973/233663088-5b789b6f-72f8-4441-a9fe-1865c51784b2.JPG)
+
+![web_actualizada](https://user-images.githubusercontent.com/126183973/233663026-2e2c7ed3-2506-4be6-b100-eae1db760e5d.JPG)
+
+
 
