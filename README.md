@@ -208,7 +208,7 @@ En resumen, aunque la compilación en sí misma no es necesaria para una aplicac
    Este archivo buildspec.yml contiene dos fases: build y post_build. En la fase de build, simplemente se imprime un mensaje indicando que no es necesario compilar la aplicación. En la fase de post_build, se utiliza el comando aws s3 sync para sincronizar todos los archivos del repositorio (excepto los archivos en la carpeta .git y el propio archivo buildspec.yml) con el bucket de S3 que has creado para alojar la aplicación web. La opción --delete asegura que cualquier archivo que ya no esté presente en el repositorio se elimine del bucket de S3
    
    7. Deja las configuraciones restantes como están y haz clic en Continue to CodePipeline.En la página de CodePipeline, haz clic en Next.
-   8. En la sección Deploy, selecciona Amazon S3 como el proveedor de implementación. Elige el bucket de S3 que creaste en el paso 3 y escribe index.html en el campo S3 object key. Marca la casilla Extract file before deploy para descomprimir los archivos antes de implementarlos. Haz clic en Next.
+   8. En la sección Deploy, selecciona Amazon S3 como el proveedor de implementación. Elige el bucket de S3 que creaste en el paso 3. Marca la casilla Extract file before deploy para descomprimir los archivos antes de implementarlos. Haz clic en Next.
    9. Revisa la configuración de la pipeline y haz clic en Create pipeline.
 
 <ins>:five: Configuración de **AWS CodeBuild** para compilar y desplegar la aplicación web en el bucket de S3<ins>
