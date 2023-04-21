@@ -49,8 +49,6 @@ AWS-WebAppAutoDeploy/
 
 │   ├── iam_user.yml
 
-│   └── main.tf
-
 │
 
 ├── Politicas/
@@ -84,7 +82,7 @@ Tenemos varias posibilidades para crear el usuario:
 
 - B. Creando una politica de permisos (Recomendado)
 
-- C. Automatizando con cloudformation o terraform
+- C. Automatizando con Cloudformation
 
 **Crear el usuario desde la cuenta Administrador**
 
@@ -121,19 +119,15 @@ A3. Revisa la configuración del usuario y haz clic en **Create user**.
 
       [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
 
-   **C. Automatizando el proceso con cloudformation o terraform**
+   **C. Automatizando el proceso con Cloudformation**
 
-    [archivos automatización](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Automatizacion)
-
-   **AWS CloudFormation** archivo `iam_user.yml`
+   **AWS CloudFormation** 
+   
+   archivo (iam_user.yml)[https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml]
 
      > usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
 
      ```aws cloudformation create-stack --stack-name WebAppAutoDeployUserStack --template-body file://iam_user.yml```
-
-     **Terraform** archivo `main.ft`
-
-     > iniciarlizar terraform ```terraform init``` y aplicamos el archivo de configuracion ```terrafom apply```
 
 8. Por último, necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
  
