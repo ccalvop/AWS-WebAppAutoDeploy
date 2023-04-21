@@ -126,7 +126,7 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
    
    1. Navega al servicio Amazon S3.
    2. Haz clic en Create bucket.
-   3. Ingresa un nombre único para el bucket (por ejemplo, mi-webapp-autodeploy) y selecciona la región en la que deseas crear el bucket. 
+   3. Ingresa un nombre único para el bucket (por ejemplo, 01-webapp-autodeploy) y selecciona la región (usaremos la misma region para CodePipeline y Codebuild) en la que deseas crear el bucket. 
    4. Permite el acceso público al bucket desmarcando "Block all public access".
    5. Haz clic en Create.
    6. Ve a la sección Permisos, Bucket policy o Política de bucket y haz clic en Edit.
