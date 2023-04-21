@@ -96,36 +96,36 @@ Tenemos varias posibilidades para crear el usuario:
 
    **A. Añadiendo los permisos uno a uno**
 
-A1. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
+	A1. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
 
-   - `AmazonS3FullAccess`
-   - `AWSCodePipeline_FullAccess`
-   - `AWSCodeBuildAdminAccess`
-   - `AWSCloudFormationFullAccess`
-   - `IAMFullAccess`
+  	- `AmazonS3FullAccess`
+   	- `AWSCodePipeline_FullAccess`
+   	- `AWSCodeBuildAdminAccess`
+   	- `AWSCloudFormationFullAccess`
+   	- `IAMFullAccess`
    
-   Estas políticas otorgan al usuario los permisos necesarios para trabajar con S3, CodePipeline, CodeBuild y CloudFormation.
+   	Estas políticas otorgan al usuario los permisos necesarios para trabajar con S3, CodePipeline, CodeBuild y CloudFormation.
    
-   Ten en cuenta que `IAMFullAccess` otorga un amplio conjunto de permisos y no se recomienda en un entorno de producción. En su lugar, se recomienda limitar el alcance de estos permisos según sea necesario.
+   	Ten en cuenta que `IAMFullAccess` otorga un amplio conjunto de permisos y no se recomienda en un entorno de producción. En su lugar, se recomienda limitar el alcance de estos permisos según sea necesario.
 
-A2. Haz clic en **Next: Tags**. Puedes agregar etiquetas si lo deseas, pero no son necesarias para este proyecto. Haz clic en **Next: Review**.
+	A2. Haz clic en **Next: Tags**. Puedes agregar etiquetas si lo deseas, pero no son necesarias para este proyecto. Haz clic en **Next: Review**.
 
-A3. Revisa la configuración del usuario y haz clic en **Create user**.
+	A3. Revisa la configuración del usuario y haz clic en **Create user**.
 
-:pager:
-![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
+	:pager:
+	![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
    **B. Creando una politica de permisos y agregandola al usuario creado** (Recomendado)
    
-   archivo [politica.json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
+   	archivo [politica.json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
 
    **C. Automatizando el proceso con AWS CloudFormation**
    
-   archivo [iam_user.yml](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml)
+   	archivo [iam_user.yml](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Automatizacion/iam_user.yml)
 
-     > usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
+     	> usando la interfaz de línea de comandos de AWS (CLI) para crear un stack en CloudFormation
 
-     ```aws cloudformation create-stack --stack-name WebAppAutoDeployUserStack --template-body file://iam_user.yml```
+     	```aws cloudformation create-stack --stack-name WebAppAutoDeployUserStack --template-body file://iam_user.yml```
 
 8. Por último, necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
  
