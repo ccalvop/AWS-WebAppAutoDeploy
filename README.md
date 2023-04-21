@@ -35,6 +35,7 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 
 -Entrega Continua (CD): Es el proceso de desplegar automáticamente las aplicaciones en producción después de pasar por las etapas de CI.
 ```
+(*) Importante que trabajaremos siempre en la misma región.
 
 ***
 
