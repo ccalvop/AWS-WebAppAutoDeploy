@@ -1,8 +1,6 @@
 # AWS-WebAppAutoDeploy
 ## Implementación automática de una aplicación web utilizando servicios de AWS
 
-http://01-webapp-autodeploy.s3-website-us-east-1.amazonaws.com
-
 <br>
 
 Proyecto colaborativo desarrollado por:
@@ -20,14 +18,20 @@ El proyecto se divide en dos partes:
 **1**. Creación de un usuario AWS con los permisos adecuados
 
 **2**. Desarrollo e implementación de la aplicación web en AWS
+
+http://01-webapp-autodeploy.s3-website-us-east-1.amazonaws.com
+
+(*) Importante que trabajemos siempre en la misma región para evitar problemas entre los servicios AWS.
+
 - Creación de un repositorio de GitHub para alojar el código de la aplicación web.
 - Diseño y desarrollo de una aplicación web simple utilizando HTML, CSS y JavaScript.
 - Configuración de un bucket de S3 para alojar y servir la aplicación web.
 - Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
 - Pruebas y documentación del proceso de CI/CD.
 
-(*) Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO es necesario ya que CodePipeline tiene una opcion para desencadenar el proceso si hay cambios en el repositorio.
+(*) Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO sería necesario ya que CodePipeline tiene una opción para desencadenar el proceso si hay cambios en el repositorio.
 
+**¿Qué es CI/CD?**
 ```
 CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Integration, CI) y la Entrega Continua (Continuous Delivery, CD).
 
@@ -35,7 +39,23 @@ CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Inte
 
 -Entrega Continua (CD): Es el proceso de desplegar automáticamente las aplicaciones en producción después de pasar por las etapas de CI.
 ```
-(*) Importante que trabajaremos siempre en la misma región.
+**Arbol de archivos del repositorio**
+
+AWS-WebAppAutoDeploy/
+│
+├── Automatizacion/
+│   ├── iam_user.yml
+│   └── main.tf
+│
+├── Politicas/
+│   ├── WebAppAutoDeployPolicy.json
+│   └── codebuild-WebAppAutoDeployBuildProject-service-role
+│
+├── buildspec.yml
+├── index.html
+├── script.js
+├── styles.css
+└── README.md
 
 ***
 
@@ -48,7 +68,7 @@ Tenemos varias posibilidades para crear el usuario:
 
 - A. Añadiendo los permisos uno a uno
 
-- B. Creando una politica de permisos 
+- B. Creando una politica de permisos (Recomendado)
 
 - C. Automatizando con cloudformation o terraform
 
@@ -64,7 +84,7 @@ Tenemos varias posibilidades para crear el usuario:
 
    **A. Añadiendo los permisos uno a uno**
 
-5. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
+A1. En la página "Set permissions", selecciona la opción **Attach existing policies directly**. Busca y selecciona las siguientes políticas:
 
    - `AmazonS3FullAccess`
    - `AWSCodePipeline_FullAccess`
@@ -76,18 +96,18 @@ Tenemos varias posibilidades para crear el usuario:
    
    Ten en cuenta que `IAMFullAccess` otorga un amplio conjunto de permisos y no se recomienda en un entorno de producción. En su lugar, se recomienda limitar el alcance de estos permisos según sea necesario.
 
-6. Haz clic en **Next: Tags**. Puedes agregar etiquetas si lo deseas, pero no son necesarias para este proyecto. Haz clic en **Next: Review**.
+A2. Haz clic en **Next: Tags**. Puedes agregar etiquetas si lo deseas, pero no son necesarias para este proyecto. Haz clic en **Next: Review**.
 
-7. Revisa la configuración del usuario y haz clic en **Create user**.
+A3. Revisa la configuración del usuario y haz clic en **Create user**.
 
 :pager:
 ![guia-crear-usuario](https://user-images.githubusercontent.com/126183973/232841803-42df89c9-fc1e-4fe0-bf66-747ef9b83b6d.JPG)
 
-   **B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
+   **B. Creando una politica de permisos y agregandola al usuario creado** (Recomendado)
 
       [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
 
-   **C. Automatizando con cloudformation o terraform**
+   **C. Automatizando el proceso con cloudformation o terraform**
 
     [archivos automatización](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Automatizacion)
 
@@ -225,6 +245,11 @@ artifacts:
    8. En la sección Deploy, selecciona Amazon S3 como el proveedor de implementación. Elige el bucket de S3 que creaste en el paso 3. Marca la casilla Extract file before deploy para descomprimir los archivos antes de implementarlos. Haz clic en Next.
    9. Revisa la configuración de la pipeline y haz clic en Create pipeline.
 
-<ins>:five: Pipeline se ejecuta y se publica la web leyendo del repositorio si ha actualizado<ins>
+<ins>:five: Pruebas y ejecución <ins>
+
+Pipeline se ejecuta. La primera vez se despliegan los archivos del respositorio en el bucket que hace de servidor web. AWS actualizará ante cualquier cambio en el repositorio.
 
 ![final_1](https://user-images.githubusercontent.com/126183973/233655309-b48175fa-e7f0-4d3d-a420-a2553b2ead43.JPG)
+
+Podemos probar a modificar el codigo en el archivo index.html del repositorio y veremos como de forma casi instantánea, la web se actualiza:
+
