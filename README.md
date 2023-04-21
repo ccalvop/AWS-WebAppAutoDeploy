@@ -1,5 +1,6 @@
 # AWS-WebAppAutoDeploy
-## Implementación automática de una aplicación web utilizando servicios de AWS
+## Implementación automática de una aplicación web http://01-webapp-autodeploy.s3-website-us-east-1.amazonaws.com
+## utilizando servicios de AWS
 
 <br>
 
@@ -18,8 +19,6 @@ El proyecto se divide en dos partes:
 **1**. Creación de un usuario AWS con los permisos adecuados
 
 **2**. Desarrollo e implementación de la aplicación web en AWS
-
-http://01-webapp-autodeploy.s3-website-us-east-1.amazonaws.com
 
 (*) Importante que trabajemos siempre en la misma región para evitar problemas entre los servicios AWS.
 
