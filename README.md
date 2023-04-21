@@ -228,7 +228,3 @@ artifacts:
 <ins>:five: Pipeline se ejecuta y se publica la web leyendo del repositorio si ha actualizado<ins>
 
 ![final_1](https://user-images.githubusercontent.com/126183973/233655309-b48175fa-e7f0-4d3d-a420-a2553b2ead43.JPG)
-
-
-
-
