@@ -244,8 +244,9 @@ artifacts:
    
    Este archivo buildspec.yml contiene dos fases: build y post_build. En la fase de build, simplemente se imprime un mensaje indicando que no es necesario compilar la aplicación. En la fase de post_build, se utiliza el comando aws s3 sync para sincronizar todos los archivos del repositorio (excepto los archivos en las carpetas .git, Automatizacion y Politicas, y el propio archivo buildspec.yml) con el bucket de S3 que has creado para alojar la aplicación web. La opción --delete asegura que cualquier archivo que ya no esté presente en el repositorio se elimine del bucket de S3.
    
-  Ademas, hay que modificar el permiso del rol creado por CodeBuild: codebuild-WebAppAutoDeployBuildProject-service-role
-  (rol)[https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/codebuild-WebAppAutoDeployBuildProject-service-role]
+  Ademas, hay que modificar el permiso del rol creado por CodeBuild: _codebuild-WebAppAutoDeployBuildProject-service-role_
+	
+  archivo [rol](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/codebuild-WebAppAutoDeployBuildProject-service-role)
      
    7. Deja las configuraciones restantes como están y haz clic en Continue to CodePipeline.En la página de CodePipeline, haz clic en Next.
    8. En la sección Deploy, selecciona Amazon S3 como el proveedor de implementación. Elige el bucket de S3 que creaste en el paso 3. Marca la casilla Extract file before deploy para descomprimir los archivos antes de implementarlos. Haz clic en Next.
