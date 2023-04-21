@@ -5,11 +5,12 @@
 
 Proyecto colaborativo desarrollado por:
 
+**Carlos Calvo** [Linkedin](https://www.linkedin.com/in/carlos-calvo-pareja/)
+
 **Artem Pavlenko** [Linkedin](https://www.linkedin.com/in/srpavlenko/)
 
 **Carlos Brizuela** [Linkedin](linkedin.com/in/carlos-b-aws-cloud)
 
-**Carlos Calvo** [Linkedin](https://www.linkedin.com/in/carlos-calvo-pareja/)
 <br>
 <hr>
 
