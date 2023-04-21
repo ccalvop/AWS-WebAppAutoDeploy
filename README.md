@@ -26,7 +26,7 @@ El proyecto se divide en dos partes:
 - Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
 - Pruebas y documentación del proceso de CI/CD.
 
-(*)- Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO es necesario ya que CodePipeline tiene una opcion para desencadenar el proceso si hay cambios en el repositorio.
+(*) Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO es necesario ya que CodePipeline tiene una opcion para desencadenar el proceso si hay cambios en el repositorio.
 
 ```
 CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Integration, CI) y la Entrega Continua (Continuous Delivery, CD).
