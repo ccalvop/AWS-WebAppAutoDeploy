@@ -15,7 +15,7 @@ Proyecto colaborativo desarrollado por:
 <br>
 <hr>
 
-El proyecto lo dividiremos en dos partes:
+El proyecto se divide en dos partes:
 
 **1**. Creación de un usuario AWS con los permisos adecuados
 
@@ -26,7 +26,7 @@ El proyecto lo dividiremos en dos partes:
 - Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
 - Pruebas y documentación del proceso de CI/CD.
 
-(*)- Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO es necesario ya que CodePipeline tiene una opcion para desencadenar el proceso si hay cambios en el codigo.
+(*)- Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO es necesario ya que CodePipeline tiene una opcion para desencadenar el proceso si hay cambios en el repositorio.
 
 ```
 CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Integration, CI) y la Entrega Continua (Continuous Delivery, CD).
@@ -84,7 +84,7 @@ Tenemos varias posibilidades para crear el usuario:
 
    **B. Creando una politica de permisos y agregandola al usuario** (Recomendado)
 
-      [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/tree/main/Politicas)
+      [politica json](https://github.com/ccalvop/AWS-WebAppAutoDeploy/blob/main/Politicas/WebAppAutoDeployPolicy.json)
 
    **C. Automatizando con cloudformation o terraform**
 
@@ -100,7 +100,7 @@ Tenemos varias posibilidades para crear el usuario:
 
      > iniciarlizar terraform ```terraform init``` y aplicamos el archivo de configuracion ```terrafom apply```
 
-8. Necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
+8. Por último, necesitarás crear una contraseña y proporcionar acceso a la consola al nuevo usuario:
  
    - Busca y selecciona el usuario que acabas de crear (WebAppAutoDeployUser).
    - En la página de resumen del usuario, ve a la pestaña Security credentials.
