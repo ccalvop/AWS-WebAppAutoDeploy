@@ -131,7 +131,8 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
    5. Haz clic en Create.
    6. Ve a la sección Permisos, Bucket policy o Política de bucket y haz clic en Edit.
    7. Agrega la siguiente política al editor de políticas:
-      ```      
+
+```      
 	{
 		"Version": "2012-10-17",
 		"Statement": [
@@ -144,9 +145,9 @@ _(En AWS, usaremos el nuevo usuario creado en el paso 1)_
 			}
 		]
 	}
+
+```
 	
-  	```
-      ![buckets3-3 policy](https://user-images.githubusercontent.com/126183973/232858066-a18ba578-e2d7-4b69-9527-5cc547eb062e.png)
    8. Configura el bucket como página web estática. En propiedades: **Alojamiento de sitios web estáticos** `Editar`
    9. En **Index document o Documento de índice** especificamos el nombre de la página: `index.html`
       ![buckets3-5](https://user-images.githubusercontent.com/126183973/232861967-72c4fc28-0959-43c7-bb81-32c30a462e88.JPG)
