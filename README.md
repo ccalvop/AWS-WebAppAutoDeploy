@@ -32,14 +32,14 @@ Crear un proceso de integración y despliegue continuo (CI/CD) para una aplicaci
 
 **Archivos y código a crear:**	
 
-Archivos de la aplicación web:
-	- index.html: archivo HTML de la aplicación web.
+ - Archivos de la aplicación web:
+ 	- index.html: archivo HTML de la aplicación web.
 	- script.js: archivo JavaScript de la aplicación web.
 	- styles.css: archivo CSS de la aplicación web.
-Un archivo buildspec.yml que describa las acciones necesarias para compilar y desplegar la aplicación web utilizando AWS CodeBuild.
-Archivo de configuración:
+ - Un archivo buildspec.yml que describa las acciones necesarias para compilar y desplegar la aplicación web utilizando AWS CodeBuild.
+ - Archivo de configuración:
 	- Un archivo de plantilla de AWS CloudFormation que incluya la configuración del usuario específico para el proyecto.
-Un archivo README.md que explique
+ - Un archivo README.md que explique
 	- El propósito y los objetivos del proyecto.
 	- Cómo realizar cambios en la aplicación web y cómo se actualizará automáticamente en S3 a través de la canalización de CI/CD.
 
