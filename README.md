@@ -15,6 +15,9 @@ Proyecto colaborativo desarrollado por:
 <br>
 <hr>
 
+**Objetivo**
+Crear un proceso de integración y despliegue continuo (CI/CD) para una aplicación web utilizando AWS CodePipeline, AWS CodeBuild y Amazon S3, y configurar un webhook en GitHub para actualizar automáticamente la aplicación web cuando se realicen cambios en el repositorio.
+
 El proyecto se divide en dos partes:
 
 **1**. Creación de un usuario AWS con los permisos adecuados
