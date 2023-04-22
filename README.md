@@ -25,10 +25,10 @@ Crear un proceso de integración y despliegue continuo (CI/CD) para una aplicaci
 
 **Servicios de AWS involucrados:**
 
-AWS **IAM**: para crear un usuario específico para el proyecto.
-Amazon **S3**: para alojar la aplicación web como un sitio web estático.
-AWS **CodePipeline**: para crear una canalización de CI/CD que maneje la integración y despliegue de la aplicación web.
-AWS **CodeBuild**: para compilar y probar la aplicación web.
+ - AWS **IAM**: para crear un usuario específico para el proyecto.
+ - Amazon **S3**: para alojar la aplicación web como un sitio web estático.
+ - AWS **CodePipeline**: para crear una canalización de CI/CD que maneje la integración y despliegue de la aplicación web.
+ - AWS **CodeBuild**: para compilar y probar la aplicación web.
 
 **Archivos y código a crear:**	
 
