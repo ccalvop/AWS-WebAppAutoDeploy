@@ -1,6 +1,8 @@
-# AWS-WebAppAutoDeploy
-## Implementación automática de una aplicación web utilizando servicios de AWS
-## http://01-webapp-autodeploy.s3-website-us-east-1.amazonaws.com
+![banner](https://user-images.githubusercontent.com/126183973/233770730-096f2d5a-cecd-472e-9ce5-b5ffb736aeba.jpg)
+
+## AWS-WebAppAutoDeploy
+### Implementación automática de una aplicación web utilizando servicios de AWS
+#### http://01-webapp-autodeploy.s3-website-us-east-1.amazonaws.com
 <br>
 
 Proyecto colaborativo desarrollado por:
