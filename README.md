@@ -16,51 +16,43 @@ Proyecto colaborativo desarrollado por:
 <hr>
 
 **Objetivo**
-Crear un proceso de integración y despliegue continuo (CI/CD) para una aplicación web utilizando AWS CodePipeline, AWS CodeBuild y Amazon S3, y configurar un webhook en GitHub para actualizar automáticamente la aplicación web cuando se realicen cambios en el repositorio.
 
-El proyecto se divide en dos partes:
+Crear un proceso de integración y despliegue continuo (CI/CD) para una aplicación web utilizando AWS CodePipeline, AWS CodeBuild y Amazon S3. Configurar una actualización automática de la aplicación web cuando se realicen cambios en el repositorio.
 
-**1**. Creación de un usuario AWS con los permisos adecuados
+**Servicios de AWS involucrados:**
 
-**2**. Desarrollo e implementación de la aplicación web en AWS
+	- AWS **IAM**: para crear un usuario específico para el proyecto.
+	- Amazon **S3**: para alojar la aplicación web como un sitio web estático.
+	- AWS **CodePipeline**: para crear una canalización de CI/CD que maneje la integración y despliegue de la aplicación web.
+	- AWS **CodeBuild**: para compilar y probar la aplicación web.
 
-(*) Importante que trabajemos siempre en la misma región para evitar problemas entre los servicios AWS.
+**Archivos y código a crear:**	
 
-- Creación de un repositorio de GitHub para alojar el código de la aplicación web.
-- Diseño y desarrollo de una aplicación web simple utilizando HTML, CSS y JavaScript.
-- Configuración de un bucket de S3 para alojar y servir la aplicación web.
-- Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
-- Pruebas y documentación del proceso de CI/CD.
+	- Archivos de la aplicación web:
+		- index.html: archivo HTML de la aplicación web.
+		- script.js: archivo JavaScript de la aplicación web.
+		- styles.css: archivo CSS de la aplicación web.
+	- Un archivo buildspec.yml que describa las acciones necesarias para compilar y desplegar la aplicación web utilizando AWS CodeBuild.
+	- Archivos de infraestructura y configuración:
+		Un archivo de plantilla de AWS CloudFormation que incluya la configuración de AWS CodePipeline, AWS CodeBuild, Amazon S3.
+	- Un archivo README.md que explique
+		- El propósito y los objetivos del proyecto.
+		- mCómo desplegar y configurar el proyecto utilizando AWS CloudFormation.
+		- Cómo realizar cambios en la aplicación web y cómo se actualizará automáticamente en S3 a través de la canalización de CI/CD.
 
-(*) Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO sería necesario ya que CodePipeline tiene una opción para desencadenar el proceso si hay cambios en el repositorio.
-
-**¿Qué es CI/CD?**
-```
-CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Integration, CI) y la Entrega Continua (Continuous Delivery, CD).
-
--Integración Continua (CI): Es la práctica de combinar automáticamente el código de los desarrolladores en un repositorio centralizado. El objetivo de la CI es detectar y solucionar rápidamente los problemas de integración y garantizar que el código esté siempre en un estado desplegable.
-
--Entrega Continua (CD): Es el proceso de desplegar automáticamente las aplicaciones en producción después de pasar por las etapas de CI.
-```
 **Arbol de archivos del repositorio**
 
 AWS-WebAppAutoDeploy/
 
-│
-
 ├── Automatizacion/
 
 │   ├── iam_user.yml
-
-│
 
 ├── Politicas/
 
 │   ├── WebAppAutoDeployPolicy.json
 
 │   └── codebuild-WebAppAutoDeployBuildProject-service-role
-
-│
 
 ├── buildspec.yml
 
@@ -72,6 +64,35 @@ AWS-WebAppAutoDeploy/
 
 └── README.md
 
+**Resultado esperado:**
+
+Al finalizar el proyecto, tendremos una aplicación web alojada en un bucket de Amazon S3 y accesible a través de una URL. La aplicación se actualizará automáticamente cada vez que se realicen cambios en el repositorio de GitHub, gracias a la canalización de CI/CD implementada con AWS CodePipeline y AWS CodeBuild.
+
+***
+
+**Resumen de los pasos a seguir:**
+
+**1**. Creación de un usuario AWS con los permisos adecuados.
+
+**2**. Desarrollo e implementación de la aplicación web en AWS.
+
+(*) Importante que trabajemos siempre en la misma región para evitar problemas entre los servicios AWS.
+
+- Creación de un repositorio de GitHub para alojar el código de la aplicación web.
+- Diseño y desarrollo de una aplicación web simple utilizando HTML, CSS y JavaScript.
+- Configuración de un bucket de S3 para alojar y servir la aplicación web.
+- Configuración de AWS CodePipeline y CodeBuild para el proceso de CI/CD.
+- (*) Creación de un webhook en GitHub para desencadenar automáticamente el proceso de CI/CD: NO sería necesario ya que CodePipeline tiene la opción para desencadenar el proceso si hay cambios en el repositorio.
+- Pruebas y documentación del proceso.
+
+**¿Qué es CI/CD?**
+```
+CI/CD es un acrónimo que se refiere a la Integración Continua (Continuous Integration, CI) y la Entrega Continua (Continuous Delivery, CD).
+
+-Integración Continua (CI): Es la práctica de combinar automáticamente el código de los desarrolladores en un repositorio centralizado. El objetivo de la CI es detectar y solucionar rápidamente los problemas de integración y garantizar que el código esté siempre en un estado desplegable.
+
+-Entrega Continua (CD): Es el proceso de desplegar automáticamente las aplicaciones en producción después de pasar por las etapas de CI.
+```
 ***
 
 ## 1. Creación de un usuario en AWS con permisos adecuados
