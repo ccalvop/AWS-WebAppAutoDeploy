@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/126183973/233770730-096f2d5a-cecd-472e-9ce5-b5ffb736aeba.jpg" />
 </p>
 
-### AWS-WebAppAutoDeploy:
+### AWS-WebAppAutoDeploy
 
 ### Implementación automática de una aplicación web utilizando servicios de AWS
 
