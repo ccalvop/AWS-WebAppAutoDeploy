@@ -4,6 +4,8 @@
 
 ### AWS-WebAppAutoDeploy
 
+![diagram-WebAppAutoDeploy](https://github.com/ccalvop/AWS-WebAppAutoDeploy/assets/126183973/b6147817-4f8a-4fc4-aa0f-d1b667fe2f67)
+
 ### Implementación automática de una aplicación web utilizando servicios de AWS
 
 #### http://01-webapp-autodeploy.s3-website-us-east-1.amazonaws.com
