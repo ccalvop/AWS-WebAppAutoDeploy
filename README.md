@@ -295,5 +295,3 @@ Podemos probar a modificar el codigo en el archivo index.html del repositorio y 
 
 
 
-
-TIME - 2023-11-29 08:36:24
