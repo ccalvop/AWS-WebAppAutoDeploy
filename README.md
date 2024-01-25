@@ -293,5 +293,7 @@ Podemos probar a modificar el codigo en el archivo index.html del repositorio y 
 
 ![web_actualizada](https://user-images.githubusercontent.com/126183973/233663026-2e2c7ed3-2506-4be6-b100-eae1db760e5d.JPG)
 
+Finalizacion de los servicios disponibles para ejecución de pruebas en AWS.
+
 
 
