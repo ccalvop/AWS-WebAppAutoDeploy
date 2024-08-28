@@ -291,7 +291,6 @@ Podemos probar a modificar el codigo en el archivo index.html del repositorio y 
 
 ![index_modificacion](https://user-images.githubusercontent.com/126183973/233663088-5b789b6f-72f8-4441-a9fe-1865c51784b2.JPG)
 
-update
 
 ![web_actualizada](https://user-images.githubusercontent.com/126183973/233663026-2e2c7ed3-2506-4be6-b100-eae1db760e5d.JPG)
 
